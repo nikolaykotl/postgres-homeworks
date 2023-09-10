@@ -15,9 +15,9 @@ where ship_country = 'Germany'
 -- 4. минимальную и максимальную цену среди продуктов, не снятых с продажи (таблица products, колонки unit_price, discontinued не равно 1)
 select min(unit_price), max(unit_price)
 from products
-where discontinued = 0
+where discontinued != 0
 
 -- 5. минимальную и максимальную цену среди продуктов, не снятых с продажи и которых имеется не меньше 20 (таблица products, колонки unit_price, units_in_stock, discontinued не равно 1)
 select min(unit_price), max(unit_price)
 from products
-where discontinued = 0 and units_in_stock >= 20
+where discontinued != 0 and units_in_stock >= 20
