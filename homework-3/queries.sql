@@ -10,6 +10,7 @@ where customers.city = 'London'
 and employees.city = 'London'
 and shippers.company_name = 'United Package'
 
+
 -- 2. Наименование продукта, количество товара (product_name и units_in_stock в табл products),
 -- имя поставщика и его телефон (contact_name и phone в табл suppliers) для таких продуктов,
 -- которые не сняты с продажи (поле discontinued) и которых меньше 25 и которые в категориях Dairy Products и Condiments.
